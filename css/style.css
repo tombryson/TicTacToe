@@ -1,0 +1,15 @@
+.gameBoard .box {
+    width: 299px;
+    height: 299px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    line-height: 299px;
+    display: inline-block;
+}
+
+.gameBoard {
+    height: 911px;
+    width: 911px;
+    border: 1px solid black;
+}

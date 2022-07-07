@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <audio id="onClick" src="audio/button_click.wav" preload="auto"></audio>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
     <script src="js/jQuery.js"></script>
     <script src="js/tickTacToe.js"></script>
 </head>
 <body>
-    <div>
-        <h3>Player 1's Score: <span class=p1score>0</span></h3>
-        <h3>Player 2's Score: <span class=p2score>0</span></h3>
-        <h2 class=whosTurn> </h2>
+    <div class='title'><h1>Tic Tac Toe</h1></div>
+    <div class='winner'>placeholder</div>
+    <div class="container">
+        <h2>Player 1's Score: <span class=p1score>0</span></h2>
+        <h2>Player 2's Score: <span class=p2score>0</span></h2>
+        <h2 class=whosTurn>Player 1's Turn...</h2>
+        <div class="button-container">
+        <button class="clearBoard button-28">Refresh Game</button>
+        <button class="resetscores button-28">Reset Scores</button>
+        </div>
     </div>
+    <div class="gameBoard-container">
         <div class="gameBoard">
-            <div class='box canClick' id="A1"></div>
-            <div class='box canClick' id="A2"></div>
-            <div class='box canClick' id="A3"></div>
-            <div class='box canClick' id="B1"></div>
-            <div class='box canClick' id="B2"></div>
-            <div class='box canClick' id="B3"></div>
-            <div class='box canClick' id="C1"></div>
-            <div class='box canClick' id="C2"></div>
-            <div class='box canClick' id="C3"></div>
+            <div class="row">
+                <div class='box canClick' id="A1"></div>
+                <div class='box canClick' id="A2"></div>
+                <div class='box canClick' id="A3"></div>
+            </div>
+            <div class="row">
+                <div class='box canClick' id="B1"></div>
+                <div class='box canClick' id="B2"></div>
+                <div class='box canClick' id="B3"></div>
+                </div>
+            <div class="row">
+                <div class='box canClick' id="C1"></div>
+                <div class='box canClick' id="C2"></div>
+                <div class='box canClick' id="C3"></div>
+            </div>
         </div>
-        <div>
-            <button class="clearBoard">Refresh Game</button>
-            <button class="resetscores">Reset Scores</button>
-        </div>
+    </div>
         <div class="cache cross"></div>
         <div class="cache knot"></div>
-        <div class='aside'><h2>Tic Tac Toe</h2></div>
 </body>
 </html>

@@ -69,7 +69,7 @@ hover.prop('playbackRate', 3);
 ////Animations
 
 const confetti = function () {
-
+    $('#canvas').fadeIn(800).delay(500).fadeOut(2000);
 }
 
 
@@ -95,7 +95,7 @@ const winner = function (symbol, player) {    //////////////////////////////////
         $(".box").removeClass('canClick');
         hover.prop('volume', 0);
         $('.winner').text(`${ player } Wins`);
-        $(".winner").fadeIn(800).delay(800).fadeOut(1500);
+        $(".winner").fadeIn(800).delay(1000).fadeOut(1500);
         confetti();
         return 1;
     } else {

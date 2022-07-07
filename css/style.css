@@ -2,7 +2,7 @@
 
 .gameBoard .box {
     width: 31%;
-    background-color: white;
+    background-color: #7da9cf;
     text-align: center;
     display: inline-block;
     background-size: contain;
@@ -108,8 +108,8 @@ span {
 }
 
 .canClick:hover {
-    transition: 0.2s all;;
-    background: radial-gradient(rgb(210, 222, 232) 20%, white 70%);
+    transition: 0.5s all;;
+    background: radial-gradient(rgb(210, 222, 232) 20%, #7da9cf 80%);
 }
 
 .button-container {
@@ -125,7 +125,7 @@ span {
     top: 34%;
     left: 18%;
     display: none;
-    color: goldenrod;
-    opacity: 95%;
+    color: rgb(236, 194, 89);
+    opacity: 94%;
     font-family: 'Grandstander', cursive;
 }

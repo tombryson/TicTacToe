@@ -41,8 +41,8 @@
     margin: 0 auto;
     background-color: black;
     padding: 18px 2px;
-    border-radius: 30px;
-    margin: 15px;
+    border-radius: 20px;
+    margin: 16px 0px 0px 50px
 }
 
 .gameArea {
@@ -65,15 +65,16 @@ h1 {
     width: 46px;
     border: aliceblue;
     border-width: 38px;
-    margin: 18px;
+    margin: 23px;
     padding: 62px 0px 0px 0px;
     text-align: left;
     position: fixed;
+    z-index: -1;
 }
 
 h2 {
     text-align: left;
-    padding: 0px 24px;
+    padding: 10px 24px;
 }
 
 span {
@@ -90,9 +91,10 @@ span {
 
 .gameBoard-container {
     display: inline-block;
-    width: 50%;
+    width: 52%;
     margin: auto;
     text-align: center;
+    padding-top: 2px
 }
 
 .container {
@@ -101,15 +103,16 @@ span {
     margin: 0px;
     vertical-align: top;
     background-color: aliceblue;
-    border: 5px solid #ccc;
+    border: 5px solid black;
     border-radius: 30px;
     padding: 18px;
-    margin: 14px;
+    margin: 16px;
+    margin-left: 25px;
 }
 
 .canClick:hover {
     transition: 0.5s all;;
-    background: radial-gradient(rgb(210, 222, 232) 20%, #7da9cf 80%);
+    background: radial-gradient(rgb(205, 219, 232) 18%, #7da9cf 82%);
 }
 
 .button-container {
@@ -122,10 +125,14 @@ span {
     font-size: 160px;
     margin: 0 auto;
     position: absolute;
-    top: 34%;
+    top: 36%;
     left: 18%;
     display: none;
-    color: rgb(236, 194, 89);
-    opacity: 94%;
+    color: rgb(255, 203, 72);
+    opacity: 97%;
     font-family: 'Grandstander', cursive;
+}
+
+.animate__bounceInLeft {
+    --animate-delay: 1.5s;
 }

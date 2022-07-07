@@ -1,4 +1,4 @@
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 //   __ __| _)           __ __|                                    
 //      |    |   __|        |   _` |   __|                         
 //      |    |  (           |  (   |  (                            
@@ -8,7 +8,7 @@
 //                 |  (   |   __/              
 //                _| \___/  \___|              
 //                                              *auth: Tom Bryson
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
 //========*******-------
 $(document).ready(function () {
 
@@ -34,21 +34,26 @@ const updateBoard = function(id, val) {
     }
 
 ///Audio ///////////////////////
-
 const clicker = $('#onClick');
 clicker.prop("volume", 0.2);
+clicker.prop('playbackRate', 1.6);
 
 const hover = $('#onHover');
-hover.prop('volume', 0.1);
-hover.prop('playbackRate', 3);
+hover.prop('volume', 0.08);
+hover.prop('playbackRate', 2.8);
 
-////
+const kids = $('#cheer');
+kids.prop('volume', 0.3);
+kids.prop('playbackRate', 0.8);
+
+
 ///////////////////////////////===========> Buttons =======----
-
     $('.clearBoard').on('click', function (e) { /// Clear Board
         $('.box').removeClass('knot') &&
         $('.box').removeClass('cross');
         $('.box').addClass('canClick');
+        $('.title').removeClass('animate__bounceInLeft');
+        $('.title').addClass('animate__headShake');
         hover.prop('volume', 0.1);
         gameBoard = {
             A1: 0, A2: 0, A3: 0, 
@@ -59,19 +64,19 @@ hover.prop('playbackRate', 3);
     }
 );
 
-    $('.resetscores').on('click', function () { ////////////////////////// Reset scores
+    $('.resetscores').on('click', function () { /// Reset scores
         player1Wins = 0;
         player2Wins = 0;
         $('.p1score').text(player1Wins);
         $('.p2score').text(player2Wins);
         });
 
-////Animations
+///////Animations
 
 const confetti = function () {
     $('#canvas').fadeIn(800).delay(500).fadeOut(2000);
+    $('#cheer')[0].play();
 }
-
 
 
 const updateText = function () {
@@ -80,10 +85,7 @@ const updateText = function () {
     $('.whosTurn').text(gameTurns());
 }
 
-
-
-
-const winner = function (symbol, player) {    /////////////////////////////////////////////////////////////////////////// Determines the winner of the game///////////
+const winner = function (symbol, player) {    ////////////////////////////////////////////// Determines the winner of the game///////////
     if ((gameBoard.A1 === symbol && gameBoard.A2 === symbol && gameBoard.A3 === symbol)||
         (gameBoard.A1 === symbol && gameBoard.B1 === symbol && gameBoard.C1 === symbol)||
         (gameBoard.C1 === symbol && gameBoard.C2 === symbol && gameBoard.C3 === symbol)||
@@ -95,9 +97,14 @@ const winner = function (symbol, player) {    //////////////////////////////////
         $(".box").removeClass('canClick');
         hover.prop('volume', 0);
         $('.winner').text(`${ player } Wins`);
-        $(".winner").fadeIn(800).delay(1000).fadeOut(1500);
+        $(".winner").fadeIn(900).delay(1100).fadeOut(1500);
+        $('.title').removeClass('animate__headShake');
         confetti();
         return 1;
+    } else if (turnCounter >= 8) {
+        $('.winner').text(`It's a draw!`);
+        $(".winner").fadeIn(900).delay(1100).fadeOut(1500);
+        return 0;
     } else {
         return 0;
     }};
@@ -114,7 +121,7 @@ const gameTurns = function() { /// Returns the player whos turn it is
 };
 
 
-/////Misc
+/////Misc /////
 
 $('.canClick').on('mouseover', function () {
    hover[0].play();

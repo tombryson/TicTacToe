@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <audio id="onClick" src="audio/button_click.wav" preload="auto"></audio>
+    <audio id="onHover" src="audio/button-hover.wav" preload="auto"></audio>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/button.css">
     <script src="js/jQuery.js"></script>
+    <script src="js/confetti.js"></script>
     <script src="js/tickTacToe.js"></script>
 </head>
 <body>
-    <div class='title'><h1>Tic Tac Toe</h1></div>
     <div class='winner'>placeholder</div>
     <div class="container">
         <h2>Player 1's Score: <span class=p1score>0</span></h2>
@@ -20,10 +21,12 @@
         <div class="button-container">
         <button class="clearBoard button-28">Refresh Game</button>
         <button class="resetscores button-28">Reset Scores</button>
+        <div class='title'> <h1>Tic Tac Toe</h1> </div>
         </div>
     </div>
     <div class="gameBoard-container">
         <div class="gameBoard">
+            
             <div class="row">
                 <div class='box canClick' id="A1"></div>
                 <div class='box canClick' id="A2"></div>
@@ -41,6 +44,7 @@
             </div>
         </div>
     </div>
+    <!-- <div class='title'><h1>Tic Tac Toe</h1></div> -->
         <div class="cache cross"></div>
         <div class="cache knot"></div>
 </body>

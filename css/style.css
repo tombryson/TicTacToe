@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,800&display=swap');
+
 .gameBoard .box {
-    width: 32%;
+    width: 31%;
     background-color: white;
     text-align: center;
     display: inline-block;
     background-size: contain;
-    padding-bottom: 32%;
+    padding-bottom: 31%;
+    border-radius: 5px;
 }
 
 .row {
@@ -18,11 +21,13 @@
 .knot {
     background-image: url("https://drive.google.com/uc?export=download&id=1KJuBwYGVPtge29-m-kRtABukGLeoTP5t");
     background-size: contain;
+    background-position: center;
 }
 
 .cross {
     background-image: url("https://drive.google.com/uc?export=download&id=1LRFW-Gr3jkTJJH7y2-zy5Rj5G5H75RyC");
     background-size: contain;
+    background-position: center;
 }
 
 .cache {
@@ -35,30 +40,52 @@
     width: 100%;
     margin: 0 auto;
     background-color: black;
-    padding: 20px 15px;
+    padding: 18px 2px;
     border-radius: 30px;
+    margin: 15px;
 }
 
 .gameArea {
     margin: auto;
     max-width: 1000px;
     align-content: center;
-    /* background-color: #ccc; */
+    background-color: #ccc;
 }
 
 body {
     box-sizing: content-box;
-    background-color: #ccb;
+    background-color: #ccc;
     font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 h1 {
-    text-align: center;
+    font-family: 'Grandstander', cursive;
+    font-size: 112px;
+    background-color: #83aacd;
+    width: 46px;
+    border: aliceblue;
+    border-width: 38px;
+    margin: 18px;
+    padding: 62px 0px 0px 0px;
+    text-align: left;
+    position: fixed;
 }
 
 h2 {
     text-align: left;
-    padding: 0px 30px;
+    padding: 0px 24px;
+}
+
+span {
+    font-size: larger;
+    text-align: end;
+    display: inline-block;
+    width: 26px;
+}
+
+.whosTurn {
+    font-style: italic;
+    color: rgb(61, 73, 97);
 }
 
 .gameBoard-container {
@@ -74,15 +101,15 @@ h2 {
     margin: 0px;
     vertical-align: top;
     background-color: aliceblue;
-    border: 5px solid black;
+    border: 5px solid #ccc;
     border-radius: 30px;
-    padding: 15px;
-    margin: 5px;
+    padding: 18px;
+    margin: 14px;
 }
 
 .canClick:hover {
-    background: radial-gradient(#cce 40%, transparent 98%);
-    transition: 0.2s all;
+    transition: 0.2s all;;
+    background: radial-gradient(rgb(210, 222, 232) 20%, white 70%);
 }
 
 .button-container {
@@ -92,10 +119,13 @@ h2 {
 
 .winner {
     text-align: center;
-    font-size: 120px;
+    font-size: 160px;
     margin: 0 auto;
     position: absolute;
-    top: 60%;
-    left: 33%;
-    /* visibility: hidden; */
+    top: 34%;
+    left: 18%;
+    display: none;
+    color: goldenrod;
+    opacity: 95%;
+    font-family: 'Grandstander', cursive;
 }

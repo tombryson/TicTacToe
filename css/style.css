@@ -1,15 +1,50 @@
 .gameBoard .box {
-    width: 299px;
-    height: 299px;
-    border: 1px solid black;
+    width: 214px;
+    height: 214px;
+    border: 12px solid black;
     background-color: white;
     text-align: center;
-    line-height: 299px;
     display: inline-block;
+    margin: -4px;
+    background-size: contain;
+}
+
+.knot {
+    background-image: url("https://drive.google.com/uc?export=download&id=1KJuBwYGVPtge29-m-kRtABukGLeoTP5t");
+    background-size: contain;
+}
+
+.cross {
+    background-image: url("https://drive.google.com/uc?export=download&id=1LRFW-Gr3jkTJJH7y2-zy5Rj5G5H75RyC");
+    background-size: contain;
+}
+
+.cache {
+    width: 1px;
+    height: 1px;
 }
 
 .gameBoard {
-    height: 911px;
-    width: 911px;
-    border: 1px solid black;
+    max-width: 700px;
+    max-height: auto;
+    border: 20px solid black;
+    border-radius: 30px;
+    align-content: center;
+    margin: 0px 0px 0px 300px;
+}
+
+.gameArea {
+    margin: auto;
+    max-width: 1000px;
+    align-content: center;
+    /* background-color: #ccc; */
+}
+
+body {
+    box-sizing: content-box;
+    /* background-color: #ccc; */
+}
+
+h1 {
+    text-align: center;
 }

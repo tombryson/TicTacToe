@@ -9,17 +9,28 @@
     <script src="js/tickTacToe.js"></script>
 </head>
 <body>
-    <h1>Tick Tac Toe</h1>
+    <div>
+        <h3>Player 1's Score: <span class=p1score>0</span></h3>
+        <h3>Player 2's Score: <span class=p2score>0</span></h3>
+        <h2 class=whosTurn> </h2>
+    </div>
         <div class="gameBoard">
-            <div class='box' id="A1">A1</div>
-            <div class='box' id="A2">A2</div>
-            <div class='box' id="A3">A3</div>
-            <div class='box' id="B1">B1</div>
-            <div class='box' id="B2">B2</div>
-            <div class='box' id="B3">B3</div>
-            <div class='box' id="C1">C1</div>
-            <div class='box' id="C2">C2</div>
-            <div class='box' id="C3">C3</div>
+            <div class='box canClick' id="A1"></div>
+            <div class='box canClick' id="A2"></div>
+            <div class='box canClick' id="A3"></div>
+            <div class='box canClick' id="B1"></div>
+            <div class='box canClick' id="B2"></div>
+            <div class='box canClick' id="B3"></div>
+            <div class='box canClick' id="C1"></div>
+            <div class='box canClick' id="C2"></div>
+            <div class='box canClick' id="C3"></div>
         </div>
+        <div>
+            <button class="clearBoard">Refresh Game</button>
+            <button class="resetscores">Reset Scores</button>
+        </div>
+        <div class="cache cross"></div>
+        <div class="cache knot"></div>
+        <div class='aside'><h2>Tic Tac Toe</h2></div>
 </body>
 </html>

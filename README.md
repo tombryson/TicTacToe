@@ -52,7 +52,7 @@
 
 ## Setup & Gameplay
 
--- Requires Any Modern Browser
+- Requires Any Modern Browser
 
 - Begin by clicking on the 3x3 matrix to make either a knot or a cross on the clicked cell.
 - The aim of the game is to achieve three moves in a row before your opponent does.

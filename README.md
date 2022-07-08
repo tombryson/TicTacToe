@@ -42,9 +42,9 @@
 
 
 ## Features
-Score Tally
-Winning Animations
-Functional Reset Buttons
+- Score Tally
+- Winning Animations
+- Functional Reset Buttons
 
 
 ## Screenshots
@@ -55,11 +55,10 @@ Functional Reset Buttons
 Any Modern Browser
 
 
-
-## Usage
-Begin by clicking on the 3x3 matrix to make either a knot or a cross on the clicked cell.
-The aim of the game is to achieve three moves in a row before your opponent does.
-On game end, click to reset the board or restart the scoring for both players.
+## Gameplay
+- Begin by clicking on the 3x3 matrix to make either a knot or a cross on the clicked cell.
+- The aim of the game is to achieve three moves in a row before your opponent does.
+- On game end, click to reset the board or restart the scoring for both players.
 
 
 ## Project Status
@@ -70,9 +69,10 @@ Project is: _complete_
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
--Cursor Selector (potentially).
--Dynamic resizing
--Online Play
+- Cursor Selector (potentially).
+- Dynamic resizing
+- Online Play
+- AI?
 
 
 ## Acknowledgements

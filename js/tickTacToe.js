@@ -11,7 +11,6 @@ let player2Wins = 0;
         B1: 0, B2: 0, B3: 0, 
         C1: 0, C2: 0, C3: 0
     };
-
 // Updates {gameBoard} object with new board state each turn
 const updateBoard = function(id, val) { 
         Object.keys(gameBoard).forEach(key => {
@@ -19,8 +18,7 @@ const updateBoard = function(id, val) {
                 gameBoard[key] = val;
             } 
         });
-    }
-
+}
 ///Audio ///////////////////////
 const clicker = $('#onClick');
 clicker.prop("volume", 0.2);
@@ -33,8 +31,6 @@ hover.prop('playbackRate', 2.8);
 const kids = $('#cheer');
 kids.prop('volume', 0.3);
 kids.prop('playbackRate', 0.8);
-
-
 ///////////////////////////////===========> Buttons =======----
     $('.clearBoard').on('click', function (e) { /// Clear Board
         $('.box').removeClass('knot') &&
@@ -43,15 +39,20 @@ kids.prop('playbackRate', 0.8);
         $('.title').removeClass('animate__bounceInLeft');
         $('.title').addClass('animate__headShake');
         hover.prop('volume', 0.1);
+        if (gameTurns() === `Player 1's Turn...`) {
+            turnCounter = 0;
+            } else {         
+            turnCounter = 1;
+            }
         gameBoard = {
             A1: 0, A2: 0, A3: 0, 
             B1: 0, B2: 0, B3: 0, 
             C1: 0, C2: 0, C3: 0
         };
-        turnCounter = 0;
+        updateText();
+        // gameTurns();
     }
 );
-
     $('.resetscores').on('click', function () { /// Reset scores
         player1Wins = 0;
         player2Wins = 0;
@@ -72,7 +73,6 @@ const updateText = function () {
     $('.p2score').text(player2Wins);
     $('.whosTurn').text(gameTurns());
 }
-
 const winner = function (symbol, player) {    ////////////////////////////////////////////// Determines the winner of the game///////////
     if ((gameBoard.A1 === symbol && gameBoard.A2 === symbol && gameBoard.A3 === symbol)||
         (gameBoard.A1 === symbol && gameBoard.B1 === symbol && gameBoard.C1 === symbol)||
@@ -95,10 +95,8 @@ const winner = function (symbol, player) {    //////////////////////////////////
         return 0;
     } else {
         return 0;
-    }};
-
-
-
+    }
+};
 const gameTurns = function() { /// Returns the player whos turn it is
         if (turnCounter % 2 === 0) {
             whosTurn = `Player 1's Turn...`; /// It's player ones turn
@@ -108,7 +106,6 @@ const gameTurns = function() { /// Returns the player whos turn it is
         return whosTurn;
 };
 
-
 /////Misc /////
 
 $('.canClick').on('mouseover', function () {
@@ -117,7 +114,6 @@ $('.canClick').on('mouseover', function () {
 
 ////=========-------------------
 /// Addition to player's array on click ****
-///====----
 
 var boxClick = $('#onClick');
 
@@ -141,6 +137,5 @@ $('.canClick').on('click', function (e) { /////========================> Get ID 
     } else {
     }
 });
-
 
 });

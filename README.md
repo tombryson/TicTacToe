@@ -47,23 +47,19 @@ Winning Animations
 Functional Reset Buttons
 
 
-
-
 ## Screenshots
 ![Example screenshot](Screenshot%202022-07-08%20at%2011.53.38.png)
 
 
 ## Setup
-Modern Browser
+Any Modern Browser
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
 
 
 ## Usage
 Begin by clicking on the 3x3 matrix to make either a knot or a cross on the clicked cell.
 The aim of the game is to achieve three moves in a row before your opponent does.
-
-`write-your-code-here`
+On game end, click to reset the board or restart the scoring for both players.
 
 
 ## Project Status
@@ -75,16 +71,13 @@ Include areas you believe need improvement / could be improved. Also add TODOs f
 
 Room for improvement:
 - Cursor Selector (potentially).
-
-
-To do:
+- Dynamic resizing
 - Online Play
 
 
 ## Acknowledgements
-Acknowledgement to 
-
-- Many thanks to...
+Acknowledgement to Joel Turnbull, Lodan Gendum for moral support.
+George Haviaridis for much needed CSS layout support.
 
 
 ## Contact

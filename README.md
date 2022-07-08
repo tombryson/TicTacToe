@@ -20,7 +20,7 @@
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
-* [Setup & Usage](#setup-usage)
+* [Setup & Gameplay](#setup-&-gameplay)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
@@ -50,11 +50,10 @@
 ![Example screenshot](Screenshot%202022-07-08%20at%2011.53.38.png)
 
 
-## Setup
-Any Modern Browser
+## Setup & Gameplay
 
+-- Requires Any Modern Browser
 
-## Gameplay
 - Begin by clicking on the 3x3 matrix to make either a knot or a cross on the clicked cell.
 - The aim of the game is to achieve three moves in a row before your opponent does.
 - On game end, click to reset the board or restart the scoring for both players.

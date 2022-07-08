@@ -20,7 +20,7 @@
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
-* [Setup & Gameplay](#setup-&-gameplay)
+* [Setup & Gameplay](#setup--gameplay)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)

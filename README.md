@@ -1,4 +1,4 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
 //
 //   __ __| _)           __ __|                                    
 //      |    |   __|        |   _` |   __|                         
@@ -8,8 +8,8 @@
 //                 |   _ \    _ \              
 //                 |  (   |   __/              
 //                _| \___/  \___|              
-//                                              *auth: Tom Bryson
-//////////////////////////////////////////////////////////////////////////////////////
+//                                    *auth: Tom Bryson
+//////////////////////////////////////////////////
 
 # Tic Tac Toe
 > The creation of a the simple 2-player game as a demo for CSS, HTML, JS.
@@ -70,9 +70,9 @@ Project is: _complete_
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Cursor Selector (potentially).
-- Dynamic resizing
-- Online Play
+-Cursor Selector (potentially).
+-Dynamic resizing
+-Online Play
 
 
 ## Acknowledgements

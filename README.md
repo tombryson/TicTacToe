@@ -74,8 +74,8 @@ Room for improvement:
 
 
 ## Acknowledgements
-Acknowledgement to Joel Turnbull, Lodan Gendum for moral support.
-George Haviaridis for much needed CSS layout support.
+- Acknowledgement to Joel Turnbull, Lodan Gendum for moral support.
+- George Haviaridis for much needed CSS layout support.
 
 
 ## Contact

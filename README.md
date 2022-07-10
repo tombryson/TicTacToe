@@ -1,4 +1,4 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
 //
 //   __ __| _)           __ __|                                    
 //      |    |   __|        |   _` |   __|                         
@@ -8,20 +8,20 @@
 //                 |   _ \    _ \              
 //                 |  (   |   __/              
 //                _| \___/  \___|              
-//                                              *auth: Tom Bryson
-//////////////////////////////////////////////////////////////////////////////////////
+//                                    *auth: Tom Bryson
+//////////////////////////////////////////////////
 
 # Tic Tac Toe
 > The creation of a the simple 2-player game as a demo for CSS, HTML, JS.
-> Live demo [_here_](https://tombryson.github.io/project0/).
+
+> Play the game [_HERE_](https://tombryson.github.io/project0/). <<<<<<<<<<<<<<<<<<<<<
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
+* [Setup & Gameplay](#setup--gameplay)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
@@ -42,24 +42,22 @@
 
 
 ## Features
-Score Tally
-Winning Animations
-Functional Reset Buttons
+- Score Tally
+- Winning Animations
+- Functional Reset Buttons
 
 
 ## Screenshots
 ![Example screenshot](Screenshot%202022-07-08%20at%2011.53.38.png)
 
 
-## Setup
-Any Modern Browser
+## Setup & Gameplay
 
+- Requires Any Modern Browser
 
-
-## Usage
-Begin by clicking on the 3x3 matrix to make either a knot or a cross on the clicked cell.
-The aim of the game is to achieve three moves in a row before your opponent does.
-On game end, click to reset the board or restart the scoring for both players.
+- Begin by clicking on the 3x3 matrix to make either a knot or a cross on the clicked cell.
+- The aim of the game is to achieve three moves in a row before your opponent does.
+- On game end, click to reset the board or restart the scoring for both players.
 
 
 ## Project Status
@@ -67,17 +65,18 @@ Project is: _complete_
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+Areas that could possibility be improved in future projects...
 
 Room for improvement:
 - Cursor Selector (potentially).
 - Dynamic resizing
 - Online Play
+- AI?
 
 
 ## Acknowledgements
-Acknowledgement to Joel Turnbull, Lodan Gendum for moral support.
-George Haviaridis for much needed CSS layout support.
+- Acknowledgement to Joel Turnbull, Lodan Gendum for moral support.
+- George Haviaridis for much needed CSS layout support.
 
 
 ## Contact

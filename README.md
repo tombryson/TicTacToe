@@ -1,16 +1,3 @@
-///////////////////////////////////////////////////////////////
-//
-//   __ __| _)           __ __|                                    
-//      |    |   __|        |   _` |   __|                         
-//      |    |  (           |  (   |  (                            
-//     _|   _| \___|       _| \__,_| \___|                       
-//              __ __|                                             
-//                 |   _ \    _ \              
-//                 |  (   |   __/              
-//                _| \___/  \___|              
-//                                    *auth: Tom Bryson
-//////////////////////////////////////////////////
-
 # Tic Tac Toe
 > The creation of a the simple 2-player game as a demo for CSS, HTML, JS.
 
@@ -69,7 +56,6 @@ Areas that could possibility be improved in future projects...
 
 Room for improvement:
 - Cursor Selector (potentially).
-- Dynamic resizing
 - Online Play
 - AI?
 

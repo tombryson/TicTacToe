@@ -72,6 +72,11 @@ h1 {
     z-index: -1;
 }
 
+@media only screen and (max-width: 931px)
+{
+    h1{ display:none; }
+}
+
 h2 {
     text-align: left;
     padding: 10px 24px;
@@ -94,7 +99,9 @@ span {
     width: 52%;
     margin: auto;
     text-align: center;
-    padding-top: 2px
+    padding-top: 2px;
+    min-inline-size: 275px;
+    width: clamp(275px, 60%, 741px);
 }
 
 .container {
@@ -132,6 +139,13 @@ span {
     color: rgb(255, 203, 72);
     opacity: 97%;
     font-family: 'Grandstander', cursive;
+}
+
+@media only screen and (max-width: 490px)
+{
+    .winner{font-size: 80px;}
+    .winner{top: 48%}
+    .winner{left:0%}
 }
 
 .animate__bounceInLeft {

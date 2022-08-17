@@ -35,8 +35,9 @@
 
 
 ## Screenshots
-![Example screenshot](Screenshot%202022-07-08%20at%2011.53.38.png)
+![Example screenshot]
 
+(https://github.com/tombryson/project1/blob/main/Screen%20Shot%202022-08-17%20at%2012.24.54.png)
 
 ## Setup & Gameplay
 

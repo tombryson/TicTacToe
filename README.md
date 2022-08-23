@@ -1,7 +1,7 @@
 # Tic Tac Toe
 > The creation of a the simple 2-player game as a demo for CSS, HTML, JS.
 
-> Play the game [_HERE_](https://tombryson.github.io/project0/). <<<<<<<<<<<<<<<<<<<<<
+> Play the game [_HERE_](https://tombryson.github.io/TicTacToe/). <<<<<<<<<<<<<<<<<<<<<
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -35,8 +35,7 @@
 
 
 ## Screenshots
-![Example screenshot]
-https://github.com/tombryson/project1/blob/main/Screen%20Shot%202022-08-17%20at%2012.24.54.png
+![Example screenshot](Screenshot%202022-07-08%20at%2011.53.38.png)
 
 ## Setup & Gameplay
 

@@ -89,7 +89,9 @@ const winner = function (symbol, player) {    //////////////////////////////////
         $('.title').removeClass('animate__headShake');
         confetti();
         return 1;
-    } else if (turnCounter >= 8) {
+    } else if (turnCounter >= 9) {
+        turnCounter = 0;
+        $(".box").removeClass('canClick');
         $('.winner').text(`It's a draw!`);
         $(".winner").fadeIn(900).delay(1100).fadeOut(1500);
         return 0;
